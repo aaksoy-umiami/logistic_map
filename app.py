@@ -13,7 +13,7 @@ st.set_page_config(
     page_icon="🦋", layout="wide", initial_sidebar_state="expanded",
     menu_items={
         'Report a bug': "mailto:aaksoy@miami.edu",
-        'Get help': "https://github.com/hailcloud-um/logistic_map/tree/main",
+        'Get help': "https://github.com/aaksoy-umiami/logistic_map/tree/main",
         'About': "### Logistic Map Simulator\n**Interactive Research Tool for Chaos & Predictability**"
     }
 )

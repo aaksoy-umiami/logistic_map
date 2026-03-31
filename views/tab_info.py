@@ -188,7 +188,7 @@ def render_main():
         with col_auth2:
             st.markdown("#### 💻 Source Code")
             st.markdown("Explore the Python code behind this simulation on GitHub.")
-            st.link_button("View GitHub Repository", "https://github.com/hailcloud-um/logistic_map")
+            st.link_button("View GitHub Repository", "https://github.com/aaksoy-umiami/logistic_map")
             st.caption("Version 1.0 | License: MIT")
 
         st.markdown("---")
@@ -207,8 +207,8 @@ def render_main():
     st.markdown(
         f"""
         <div style='text-align: center; color: #666; font-size: 12px;'>
-            © {datetime.now().year} Altug Aksoy | University of Miami & NOAA/AOML | 
-            <a href="https://github.com/hailcloud-um/logistic_map/tree/main" target="_blank" style="color: #32b8c6; text-decoration: none;">View on GitHub</a>
+            © {datetime.now().year} Altug Aksoy | University of Miami | 
+            <a href="https://github.com/aaksoy-umiami/logistic_map/tree/main" target="_blank" style="color: #32b8c6; text-decoration: none;">View on GitHub</a>
         </div>
         """, 
         unsafe_allow_html=True
