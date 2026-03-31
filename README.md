@@ -1,6 +1,6 @@
 # Logistic Map Simulator: Visualizing Chaos and Predictability Limits
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://logistic-map.streamlit.app)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19354735.svg)](https://doi.org/10.5281/zenodo.19354735) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://logistic-map.streamlit.app)
 
 This repository contains the source code for the **Logistic Map Simulator**, an interactive tool designed to explore **chaos theory**, **nonlinear dynamics**, and **predictability limits** in 1D dynamical systems.
 
