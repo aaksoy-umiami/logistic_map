@@ -189,6 +189,7 @@ def render_main():
             st.markdown("#### 💻 Source Code")
             st.markdown("Explore the Python code behind this simulation on GitHub.")
             st.link_button("View GitHub Repository", "https://github.com/aaksoy-umiami/logistic_map")
+            st.link_button("Cite Software (Zenodo DOI)", "https://doi.org/10.5281/zenodo.19354734")
             st.caption("Version 1.0 | License: MIT")
 
         st.markdown("---")
