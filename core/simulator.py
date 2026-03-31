@@ -4,7 +4,7 @@ import time
 import gc
 
 """
-Logistic Map Simulator - Core Engine (Optimized v1.1)
+Logistic Map Simulator - Core Engine
 Author: Altug Aksoy
 Affiliation: CIMAS/Rosenstiel School, University of Miami & NOAA/AOML/HRD
 Citation: Aksoy, A. (2024). Chaos, 34, 011102. https://doi.org/10.1063/5.0181705

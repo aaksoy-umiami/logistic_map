@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the associated paper as follows."
 title: "Logistic Map Simulator"
+version: 1.0.0
 repository-code: "https://github.com/hailcloud-um/logistic_map"
 url: "https://logistic-map-simulator.streamlit.app" 
 keywords:
