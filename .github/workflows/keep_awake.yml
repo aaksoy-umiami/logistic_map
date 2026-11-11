@@ -1,0 +1,32 @@
+# Keeps the live app awake.  Streamlit Community Cloud puts an app to sleep
+# after 12 hours without a visit; this visits it every 6 hours.
+#
+# GitHub turns off scheduled workflows in a public repository after 60 days
+# without a commit, and sends an e-mail when it does.  To turn it back on:
+# the Actions tab, "Keep the app awake", "Enable workflow".
+
+name: Keep the app awake
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"    # 00:17, 06:17, 12:17 and 18:17 UTC
+  workflow_dispatch:           # and by hand, from the Actions tab
+
+permissions:
+  contents: read
+
+jobs:
+  visit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install the headless browser
+        run: |
+          python -m pip install playwright==1.65.0
+          python -m playwright install --with-deps --only-shell chromium
+      - name: Visit the app
+        run: python .github/scripts/keep_awake.py
