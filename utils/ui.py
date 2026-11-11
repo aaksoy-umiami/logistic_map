@@ -4,17 +4,17 @@ def inject_custom_css():
     st.markdown("""
         <style>
             .block-container { padding-top: 3rem !important; padding-bottom: 1rem !important; }
-            div[data-testid="column"] button {
+            [class*="st-key-tab_btn_"] button {
                 width: 100%; border-radius: 8px; padding: 10px; font-weight: 600; font-size: 14px;
                 transition: all 0.3s ease; border: 2px solid #000000 !important;
             }
-            div[data-testid="column"] button[kind="secondary"] { background-color: rgba(255, 255, 255, 0.05); color: rgba(255, 255, 255, 0.7); }
-            div[data-testid="column"] button[kind="primary"] { background: linear-gradient(135deg, #32b8c6 0%, #1d7480 100%); color: white; box-shadow: 0 4px 12px rgba(50, 184, 198, 0.3); }
-            div[data-testid="column"] button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(50, 184, 198, 0.4); }
+            [class*="st-key-tab_btn_"] button[kind="secondary"] { background-color: #ffffff; color: #262730; }
+            [class*="st-key-tab_btn_"] button[kind="primary"] { background: linear-gradient(135deg, #32b8c6 0%, #1d7480 100%); color: white; box-shadow: 0 4px 12px rgba(50, 184, 198, 0.3); }
+            [class*="st-key-tab_btn_"] button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(50, 184, 198, 0.4); }
             [data-testid="stHorizontalBlock"]:has(button[kind="primary"], button[kind="secondary"]) { border-bottom: 2px solid #000000; padding-bottom: 0px; margin-bottom: 0px; }
             [data-testid="stSidebar"] { display: block !important; min-width: 320px !important; }
             @media (max-width: 768px) {
-                [data-testid="stHorizontalBlock"] > [data-testid="stColumn"] button[key^="tab_btn_"] { margin-bottom: 0.35rem; }
+                [class*="st-key-tab_btn_"] button { margin-bottom: 0.35rem; }
                 section.main > div { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
                 html, body { font-size: 16px !important; }
             }
