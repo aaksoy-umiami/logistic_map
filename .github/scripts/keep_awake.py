@@ -8,7 +8,7 @@ asleep, it presses the wake-up button.  It then waits for the app's own header
 to be on the page, and fails if the header does not appear, so that a failed
 run sends a notification.
 
-It is run every 6 hours by .github/workflows/keep_awake.yml.  To run it by
+It is run every 3 hours by .github/workflows/keep_awake.yml.  To run it by
 hand:
 
     pip install playwright

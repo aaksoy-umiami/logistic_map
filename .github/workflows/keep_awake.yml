@@ -1,5 +1,6 @@
 # Keeps the live app awake.  Streamlit Community Cloud puts an app to sleep
-# after 12 hours without a visit; this visits it every 6 hours.
+# after 12 hours without a visit; this visits it every 3 hours.  GitHub starts
+# a scheduled run late and now and then skips one, so 3 hours leaves room.
 #
 # GitHub turns off scheduled workflows in a public repository after 60 days
 # without a commit, and sends an e-mail when it does.  To turn it back on:
@@ -9,7 +10,7 @@ name: Keep the app awake
 
 on:
   schedule:
-    - cron: "17 */6 * * *"    # 00:17, 06:17, 12:17 and 18:17 UTC
+    - cron: "17 */3 * * *"    # at 17 minutes past every third hour, UTC
   workflow_dispatch:           # and by hand, from the Actions tab
 
 permissions:
