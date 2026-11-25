@@ -1,5 +1,4 @@
 import streamlit as st
-from datetime import datetime
 
 def init_session_state():
     if 'info_sub_tab' not in st.session_state: 
@@ -153,7 +152,7 @@ def render_main():
             st.markdown("""
             Aksoy, A. (2024). A Monte Carlo approach to understanding the impacts of initial-condition 
             uncertainty, model uncertainty, and simulation variability on the predictability of 
-            chaotic systems. *Chaos*, 34, 011102.
+            chaotic systems: Perspectives from the one-dimensional logistic map. *Chaos*, 34, 011102.
             """)
             st.link_button("Read the Paper (DOI)", "https://doi.org/10.1063/5.0181705")
 
@@ -190,7 +189,7 @@ def render_main():
             st.markdown("Explore the Python code behind this simulation on GitHub.")
             st.link_button("View GitHub Repository", "https://github.com/aaksoy-umiami/logistic_map")
             st.link_button("Cite Software (Zenodo DOI)", "https://doi.org/10.5281/zenodo.19354734")
-            st.caption("Version 1.0 | License: MIT")
+            st.caption("Version 1.0.0 | License: MIT")
 
         st.markdown("---")
 
@@ -206,9 +205,9 @@ def render_main():
 
     st.markdown("---")
     st.markdown(
-        f"""
+        """
         <div style='text-align: center; color: #666; font-size: 12px;'>
-            © {datetime.now().year} Altug Aksoy | University of Miami | 
+            © 2026 Altug Aksoy | University of Miami | 
             <a href="https://github.com/aaksoy-umiami/logistic_map/tree/main" target="_blank" style="color: #32b8c6; text-decoration: none;">View on GitHub</a>
         </div>
         """, 

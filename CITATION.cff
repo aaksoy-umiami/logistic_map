@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite both the software archive and the associated research paper."
 title: "Logistic Map Simulator"
+license: MIT
 version: "1.0.0"
 date-released: "2026-03-31"
 doi: "10.5281/zenodo.19354735"
