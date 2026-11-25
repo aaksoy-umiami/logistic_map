@@ -10,7 +10,7 @@ from views import tab_bifurcation, tab_dynamics, tab_predict, tab_compare, tab_i
 # === PAGE CONFIGURATION ===
 st.set_page_config(
     page_title="Chaos & Predictability: Logistic Map Simulator | Altug Aksoy",
-    page_icon="🦋", layout="wide", initial_sidebar_state="expanded",
+    page_icon="🦋", layout="wide", initial_sidebar_state="auto",
     menu_items={
         'Report a bug': "mailto:aaksoy@miami.edu",
         'Get help': "https://github.com/aaksoy-umiami/logistic_map/tree/main",

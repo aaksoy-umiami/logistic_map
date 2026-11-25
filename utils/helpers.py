@@ -42,7 +42,7 @@ def get_image_base64(fig):
 def init_viewport_width():
     if 'viewport_width' not in st.session_state:
         try:
-            vw = streamlit_js_eval(js_expressions="window.innerWidth", key="viewport_width_js", want_output=True)
+            vw = streamlit_js_eval(js_expressions="window.parent.innerWidth", key="viewport_width_js", want_output=True)
             if vw is not None: st.session_state.viewport_width = vw
         except Exception:
             st.session_state.viewport_width = None

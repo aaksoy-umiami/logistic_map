@@ -12,7 +12,9 @@ def inject_custom_css():
             [class*="st-key-tab_btn_"] button[kind="primary"] { background: linear-gradient(135deg, #32b8c6 0%, #1d7480 100%); color: white; box-shadow: 0 4px 12px rgba(50, 184, 198, 0.3); }
             [class*="st-key-tab_btn_"] button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(50, 184, 198, 0.4); }
             [data-testid="stHorizontalBlock"]:has(button[kind="primary"], button[kind="secondary"]) { border-bottom: 2px solid #000000; padding-bottom: 0px; margin-bottom: 0px; }
-            [data-testid="stSidebar"] { display: block !important; min-width: 320px !important; }
+            @media (min-width: 768px) {
+                [data-testid="stSidebar"] { display: block !important; min-width: 320px !important; }
+            }
             @media (max-width: 768px) {
                 [class*="st-key-tab_btn_"] button { margin-bottom: 0.35rem; }
                 section.main > div { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
