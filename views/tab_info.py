@@ -195,8 +195,8 @@ def render_main():
 
         st.markdown("#### ⚠️ Disclaimer & Usage")
         st.markdown("""
-        **All rights reserved.** This application is intended for educational and research purposes only. 
-        For academic use, please strictly adhere to the citation guidelines provided for both the code repository and the publication.
+        This application is intended for educational and research use, and its code is released under the MIT License. 
+        For academic use, please cite both the code repository and the publication as given above.
 
         **I would love to hear from you!** Please feel free to contact me at my email above for any suggestions or if you encounter issues/bugs. 
         
